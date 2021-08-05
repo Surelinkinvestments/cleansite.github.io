@@ -8961,7 +8961,9 @@ textarea.form-control {
 
 .ftco-section {
   padding: 7em 0;
-  position: relative; }
+  position: relative; 
+  top: 20px;
+}
   @media (max-width: 767.98px) {
     .ftco-section {
       padding: 6em 0;
