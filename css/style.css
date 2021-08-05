@@ -8807,7 +8807,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    background: #2b98f0;
+    background: #eff6fb36;
     opacity: 0;
     z-index: 0;
     -moz-transition: all 0.3s ease;
@@ -8964,7 +8964,9 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 6em 0;
+      
+    } }
 
 .ftco-bg-dark {
   background: #33313b !important; }
