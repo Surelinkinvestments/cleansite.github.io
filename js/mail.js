@@ -20,7 +20,11 @@ form.addEventListener('submit',(e)=>{
         body:JSON.stringify(body)
     }
 
-    fetch('https://formspree.io/f/xoqykyvr',requestOptions)
+    fetch('https://formspree.io/f/mnqlonbv',requestOptions)
     .then(res=>res.json())
-    .then(data=>console.log(data));
+    .then(data=>{console.log(data)
+        form.reset();
+    });
 })
+
+// action=""
