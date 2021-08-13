@@ -6600,7 +6600,9 @@ button.bg-dark:focus {
 .pl-3,
 .px-3 {
   padding-left: 2rem !important; }
-
+.message-input{
+  border: 1px solid lightgray;
+}
 .p-4 {
   padding: 1.5rem !important; }
 

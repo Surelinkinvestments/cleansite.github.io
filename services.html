@@ -71,7 +71,7 @@
 			<div class="row d-md-flex justify-content-center">
 				<div class="col-md-12">
 					<div class="wrap-appointment bg-white d-md-flex pl-md-4 pb-5 pb-md-0">
-						<form action="#" class="appointment w-100">
+						<form class="appointment w-100">
 							<div class="row justify-content-center">
 								<div class="col-12 col-md d-flex align-items-center pt-4 pt-md-0">
 									<div class="form-group py-md-4 py-2 px-4 px-md-0">
@@ -82,16 +82,18 @@
 								<div class="col-12 col-md d-flex align-items-center">
 									<div class="form-group py-md-4 py-2 px-4 px-md-0">
 										<label for="name">Phone number</label>
-										<input type="tel" class="form-control" placeholder="Phone number">
+										<input type="tel" class="form-control" placeholder="Phone number" name="phone">
 									</div>
 								</div>
-								<div class="col-12 col-md d-flex align-items-center">
+							</div>
+              <div class="row justify-content-center">
+                <div class="col-12 col-md d-flex align-items-center">
 									<div class="form-group py-md-4 py-2 px-4 px-md-0">
 										<label for="name">Baths</label>
 										<div class="form-field">
 											<div class="select-wrap">
 												<div class="icon"><span class="fa fa-chevron-down"></span></div>
-												<select name="" id="" class="form-control">
+												<select name="baths" id="" class="form-control">
 													<option value="1">1 baths</option>
 													<option value="2">2 baths</option>
 													<option value="3">3 baths</option>
@@ -103,14 +105,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-md d-flex align-items-center pb-4 pb-md-0">
-									<div class="form-group py-md-4 py-2 px-4 px-md-0">
-										<label for="name">Beds</label>
-										<div class="form-field">
-										<textarea name="message" rows="5"></textarea>
-										</div>
-									</div>
-								</div>
+								
                 <div class="col-12 col-md d-flex align-items-center pb-4 pb-md-0">
 									<div class="form-group py-md-4 py-2 px-4 px-md-0">
 										<label for="name">Beds</label>
@@ -128,14 +123,22 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-md d-flex align-items-center align-items-stretch">
+                <div class="col-12 col-md d-flex align-items-center pb-4 pb-md-0">
+									<div class="form-group py-md-4 py-2 px-4 px-md-0">
+										<label for="name">A simple description</label>
+										<div class="form-field">
+										<textarea name="message" rows="5" class="form-control message-input"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-md d-flex align-items-center ">
 									<div
 										class="form-group py-md-4 py-2 px-4 px-md-0 d-flex align-items-stretch bg-primary">
 										<input type="submit" value="Get a quotation"
-											class="btn btn-primary py-3 px-4">
+											class="btn btn-primary">
 									</div>
 								</div>
-							</div>
+              </div>
 						</form>
 					</div>
 				</div>
@@ -307,9 +310,7 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
+  <script src="js/quotation.js"></script>
   <script src="js/main.js"></script>
 
 </body>
