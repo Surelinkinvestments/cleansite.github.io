@@ -1,5 +1,7 @@
 const form=document.querySelector('form');
 const messageInput=document.querySelector('.message-input');
+const modalContainer=document.querySelector('.modal-container');
+const closeButton=document.querySelector('.close-btn');
 
 
 form.addEventListener('submit',(e)=>{
@@ -13,8 +15,9 @@ form.addEventListener('submit',(e)=>{
                 phone:form_data.get('phone'),
                 beds:form_data.get('beds'),
                 baths:form_data.get('baths'),
-
-                
+                zipcode:form_data.get('zipcode'),
+                date:form_data.get('date'),
+                time:form_data.get('time')
             }
 
     console.log(body)
@@ -31,8 +34,12 @@ form.addEventListener('submit',(e)=>{
     .then(res=>res.json())
     .then(data=>{console.log(data)
         form.reset();
-        alert("Email sent successfully")
+        modalContainer.style.display='block';
     });
 })
 
 // action=""
+
+closeButton.addEventListener('click',()=>{
+    modalContainer.style.display='none'
+})

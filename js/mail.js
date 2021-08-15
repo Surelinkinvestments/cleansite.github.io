@@ -1,4 +1,6 @@
 const form=document.querySelector('form');
+const modalContainer=document.querySelector('.modal-container');
+const closeButton=document.querySelector('.close-btn');
 
 
 form.addEventListener('submit',(e)=>{
@@ -8,7 +10,7 @@ form.addEventListener('submit',(e)=>{
 
     let form_data=new FormData(form);
 
-    const body={email:form_data.get('email'),message:form_data.get('subject')}
+    const body={email:form_data.get('email'),message:form_data.get('message')}
 
     console.log(body)
 
@@ -22,10 +24,16 @@ form.addEventListener('submit',(e)=>{
 
     fetch('https://formspree.io/f/mnqlonbv',requestOptions)
     .then(res=>res.json())
-    .then(data=>{console.log(data)
+    .then(data=>{
+        console.log(data)
         form.reset();
-        alert("Email sent successfully")
+        modalContainer.style.display='block';
     });
 })
 
+
 // action=""
+
+closeButton.addEventListener('click',()=>{
+    modalContainer.style.display='none'
+})
