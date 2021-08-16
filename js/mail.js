@@ -12,6 +12,7 @@ form.addEventListener('submit', (e) => {
 
     const body = {
         email: form_data.get('email'),
+        full_name:form_data.get('fullname'),
         message: form_data.get('message'),
         subject: form_data.get('subject')
     }

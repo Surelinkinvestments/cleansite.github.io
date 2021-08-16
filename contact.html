@@ -105,12 +105,12 @@
 									<h3 class="mb-4">Contact Us</h3>
 									<div id="form-message-warning" class="mb-4"></div>
 
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+									<form method="POST" id="contactForm" class="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
 													<label class="label" for="name">Full Name</label>
-													<input type="text" class="form-control" name="name" id="name"
+													<input type="text" class="form-control" name="fullname" id="name"
 														placeholder="Name" required>
 												</div>
 											</div>
@@ -190,7 +190,17 @@
 					<ul class="list-unstyled">
 						<li><a href="index.html" class="py-1 d-block">Home</a></li>
 						<li><a href="about.html" class="py-1 d-block">About</a></li>
-						<li><a href="services.html" class="py-1 d-block">Services</a></li>
+						<li><a href="serconst form=document.querySelector('form');
+							const modalContainer=document.querySelector('.modal-container');
+							const closeButton=document.querySelector('.close-btn');
+							
+							
+							form.addEventListener('submit',(e)=>{
+								e.preventDefault()
+								console.log("form has  been submitted")
+							
+							
+							…})vices.html" class="py-1 d-block">Services</a></li>
 						<li><a href="contact.html" class="py-1 d-block">Contacts</a></li>
 						<li><a href="#" class="py-1 d-block">Gallery</a></li>
 					</ul>
@@ -243,8 +253,8 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	<script src="js/quotation.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/mail.js"></script>
 
 </body>
 
